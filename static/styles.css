@@ -46,3 +46,8 @@ body {
     text-align: center;
     margin-top: 1rem;
 }
+
+/* New styling for the file input to match other fields */
+input[type="file"].input-field {
+    padding: 0.5rem;
+}
