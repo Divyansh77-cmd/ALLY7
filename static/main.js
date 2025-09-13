@@ -6,19 +6,17 @@ const messageDiv = document.getElementById('message');
 form.addEventListener('submit', async (e) => {
     e.preventDefault(); // Prevent the default form submission behavior (page reload)
 
-    // Create a FormData object from the form to easily get all input values
+    // Create a FormData object from the form to easily get all input values,
+    // including the file data.
     const formData = new FormData(form);
-    // Convert the form data into a plain JavaScript object
-    const data = Object.fromEntries(formData.entries());
 
     try {
-        // Use the Fetch API to send the form data to our backend
+        // Use the Fetch API to send the form data to our backend.
+        // We no longer need to manually set the 'Content-Type' header;
+        // the browser will do it automatically for 'multipart/form-data'.
         const response = await fetch('/submit_complaint', {
             method: 'POST', // We are sending data, so use the POST method
-            headers: {
-                'Content-Type': 'application/json', // Tell the server we are sending JSON data
-            },
-            body: JSON.stringify(data), // Convert our data object into a JSON string
+            body: formData, // Send the FormData object directly
         });
 
         // Check if the response from the server was successful
