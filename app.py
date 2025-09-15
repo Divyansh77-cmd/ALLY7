@@ -73,6 +73,5 @@ def submit_complaint():
 
 # To run the app, you would execute this file
 if __name__ == '__main__':
-    # change the port if needed.
+    # You can change the port if needed. For the hackathon, 5000 is a good choice.
     app.run(debug=True, port=5000)
-
