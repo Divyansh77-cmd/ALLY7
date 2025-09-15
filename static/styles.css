@@ -1,12 +1,12 @@
-/* Google Fonts is used for better typography */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-/* Basic body font and background */
+
 body {
     font-family: 'Inter', sans-serif;
 }
 
-/* Container for the form to center it and apply a card-like style */
+
 .form-container {
     max-width: 600px;
     margin: 50px auto;
@@ -15,7 +15,7 @@ body {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-/* Standard styling for form input fields and text areas */
+
 .input-field {
     width: 100%;
     padding: 0.75rem;
@@ -23,7 +23,7 @@ body {
     border-radius: 0.5rem;
 }
 
-/* Styling for the submit button */
+
 .submit-btn {
     width: 100%;
     padding: 0.75rem;
@@ -36,18 +36,19 @@ body {
     transition: background-color 0.2s;
 }
 
-/* Hover effect for the submit button */
+
 .submit-btn:hover {
     background-color: #dc2626;
 }
 
-/* Styling for the message area that shows success or error */
+
 #message {
     text-align: center;
     margin-top: 1rem;
 }
 
-/* New styling for the file input to match other fields */
+
 input[type="file"].input-field {
     padding: 0.5rem;
 }
+
